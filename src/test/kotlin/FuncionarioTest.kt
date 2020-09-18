@@ -6,7 +6,7 @@ class FuncionarioTest {
     @Test
     fun deveCalcularBonificacaoQuandoDesenvolvedor() {
         // cenário
-        val dev = Funcionario(
+        val dev = Desenvolvedor(
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91
