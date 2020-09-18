@@ -29,7 +29,7 @@ fun main() {
     println("numero=$r")
     when (r) {
         100 -> println("numero 100, uuhuul!!")
-        7, 13 -> {
+        7, 13 -> { // tip: OR
             println("numero cabalistico")
         }
         in 60..99 -> println("entre 60 e 99")
