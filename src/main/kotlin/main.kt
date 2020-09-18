@@ -5,7 +5,7 @@ fun main() {
      * tanto var quanto val precisam ser inicializadas ou ter o tipo explicito
      */
     var t1 = "Rafael M. C. Ponte (var)";
-    var t2: Short // nao precisa ser inicializada
+    var t2: Short // tip: nao precisa ser inicializada
     val t3: String = "Inicializada obrigatoriamente ou deve ter um tipo explicito"
 
     val titular = "Rafael Ponte";
