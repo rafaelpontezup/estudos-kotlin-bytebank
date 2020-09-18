@@ -22,11 +22,10 @@ class FuncionarioTest {
     @Test
     fun deveCalcularBonificacaoQuandoQA() {
         // cenário
-        val qa = Funcionario(
+        val qa = QA(
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91,
-            tipo = 1
         )
 
         // ação
