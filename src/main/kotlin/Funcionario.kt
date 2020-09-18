@@ -6,12 +6,10 @@ class Funcionario(
 ) {
 
     fun bonificacao(): Double { // ou `fun bonificacao() = this.salario * 0.1`
-        if (tipo == 0) {
-            return this.salario * 0.1
-        } else if (tipo == 1) {
-            return this.salario * 0.2
-        } else {
-            return this.salario * 0.3
+        return when (tipo) {
+            0 -> this.salario * 0.1
+            1 -> this.salario * 0.2
+            else -> this.salario * 0.3
         }
     }
 
