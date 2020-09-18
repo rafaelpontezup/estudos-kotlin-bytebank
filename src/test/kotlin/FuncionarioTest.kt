@@ -32,7 +32,7 @@ class FuncionarioTest {
         val bonificacao = qa.bonificacao()
 
         // validação
-        assertEqualsWithPrecision(208.58, bonificacao)
+        assertEqualsWithPrecision(354.29, bonificacao)
     }
 
     @Test
