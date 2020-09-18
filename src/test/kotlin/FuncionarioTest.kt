@@ -6,14 +6,14 @@ class FuncionarioTest {
     @Test
     fun deveCalcularBonificacaoQuandoDesenvolvedor() {
         // cenário
-        val funcionario = Funcionario(
+        val dev = Funcionario(
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91
         )
 
         // ação
-        val bonificacao = funcionario.bonificacao()
+        val bonificacao = dev.bonificacao()
 
         // validação
         assertEqualsWithPrecision(104.29, bonificacao)
@@ -22,7 +22,7 @@ class FuncionarioTest {
     @Test
     fun deveCalcularBonificacaoQuandoQA() {
         // cenário
-        val funcionario = Funcionario(
+        val qa = Funcionario(
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91,
@@ -30,7 +30,7 @@ class FuncionarioTest {
         )
 
         // ação
-        val bonificacao = funcionario.bonificacao()
+        val bonificacao = qa.bonificacao()
 
         // validação
         assertEqualsWithPrecision(208.58, bonificacao)
@@ -39,15 +39,14 @@ class FuncionarioTest {
     @Test
     fun deveCalcularBonificacaoQuandoGerente() {
         // cenário
-        val funcionario = Funcionario(
+        val gerente = Gerente(
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91,
-            tipo = 2
         )
 
         // ação
-        val bonificacao = funcionario.bonificacao()
+        val bonificacao = gerente.bonificacao()
 
         // validação
         assertEqualsWithPrecision(312.87, bonificacao)
