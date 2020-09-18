@@ -6,8 +6,10 @@ open class Funcionario( // tip: deve ser "open" para ser herdada
 
     /**
      * tip: deve ser "open" para sobrescrita
+     * tip: ou `fun bonificacao() = this.salario * 0.1`
+     * tip: ou tratar como uma property que possui get() apenas
      */
-    open fun bonificacao(): Double { // tip: ou `fun bonificacao() = this.salario * 0.1`
+    open fun bonificacao(): Double {
         return this.salario * 0.1
     }
 
