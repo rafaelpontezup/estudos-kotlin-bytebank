@@ -42,6 +42,7 @@ class FuncionarioTest {
             nome = "rafael",
             cpf = "636.575.203-25",
             salario = 1042.91,
+            senha = "22" // opcional
         )
 
         // ação

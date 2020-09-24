@@ -2,7 +2,7 @@ class Gerente(
     nome: String,
     cpf: String,
     salario: Double,
-    val senha: String = "123" // tip: atributo adicional
+    private val senha: String = "123" // tip: atributo adicional; declaro e já seto; posso definir a visibilidade;
 ) : Funcionario(nome, cpf, salario) // tip: se classe filha tem construtor-primario entao deve chamar construtor-primario da classe pai
 , Autenticavel { // tip: interfaces não possuem construtores (dica pra reconhecer!)
 
