@@ -15,7 +15,7 @@ class QA : Funcionario {
     }
 
     override fun bonificacao(): Double {
-        return super.bonificacao() + this.plr;
+        return (salario * 0.1) + this.plr;
     }
 
 }

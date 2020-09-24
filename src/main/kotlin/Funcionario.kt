@@ -13,8 +13,6 @@ abstract class Funcionario(
      * tip: ou `fun bonificacao() = this.salario * 0.1`
      * tip: ou tratar como uma property que possui get() apenas
      */
-    open fun bonificacao(): Double {
-        return this.salario * 0.1
-    }
+    abstract fun bonificacao(): Double
 
 }
