@@ -7,9 +7,9 @@ class CalculadoraDeBonificacaoTest {
     fun deveCalcularBonificacaoParaTodosOsFuncionarios() {
 
         val analista = Funcionario(nome = "analista", cpf = "001", 1000.0)
-        val gerente = Gerente(nome = "analista", cpf = "001", 1000.0)
-        val dev = Desenvolvedor(nome = "analista", cpf = "001", 1000.0)
-        val qa = QA(nome = "analista", cpf = "001", 1000.0)
+        val gerente = Gerente(nome = "gerente", cpf = "002", 1000.0)
+        val dev = Desenvolvedor(nome = "dev", cpf = "003", 1000.0)
+        val qa = QA(nome = "qa", cpf = "004", 1000.0)
 
         val calculadora = CalculadoraDeBonificacao()
 
