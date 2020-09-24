@@ -1,3 +1,4 @@
+import br.com.zupacademy.estudos.modelo.Conta
 import org.junit.Test
 import kotlin.test.assertEquals
 

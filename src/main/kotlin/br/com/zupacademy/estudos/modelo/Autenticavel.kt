@@ -1,3 +1,5 @@
+package br.com.zupacademy.estudos.modelo
+
 interface Autenticavel {
 
     fun autentica(senha: String): Boolean;

@@ -1,3 +1,5 @@
+package br.com.zupacademy.estudos.modelo
+
 /**
  * tip: deve ser "open" para ser herdada
  * tip: classes abstrata já são open por padrão

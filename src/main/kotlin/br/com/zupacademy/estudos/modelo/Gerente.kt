@@ -1,3 +1,8 @@
+package br.com.zupacademy.estudos.modelo
+
+import br.com.zupacademy.estudos.modelo.Autenticavel
+import br.com.zupacademy.estudos.modelo.Funcionario
+
 class Gerente(
     nome: String,
     cpf: String,

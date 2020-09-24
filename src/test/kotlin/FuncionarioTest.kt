@@ -1,3 +1,6 @@
+import br.com.zupacademy.estudos.modelo.Desenvolvedor
+import br.com.zupacademy.estudos.modelo.Gerente
+import br.com.zupacademy.estudos.modelo.QA
 import org.junit.Assert
 import org.junit.Test
 
