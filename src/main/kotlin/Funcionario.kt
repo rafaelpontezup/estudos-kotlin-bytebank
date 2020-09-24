@@ -1,4 +1,4 @@
-open class Funcionario( // tip: deve ser "open" para ser herdada
+abstract class Funcionario( // tip: deve ser "open" para ser herdada
     val nome: String,
     val cpf: String,
     val salario: Double,
