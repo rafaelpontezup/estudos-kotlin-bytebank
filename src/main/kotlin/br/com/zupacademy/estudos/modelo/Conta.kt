@@ -25,6 +25,16 @@ class Conta(
     }
 
     /**
+     * tip: composição de objetos
+     */
+    constructor(titular: Cliente, numero: String, saldo: Double) : this(
+        titular = titular.nome,
+        numero = numero
+    ) {
+        this.saldo = saldo
+    }
+
+    /**
      * Deposita na conta
      */
     fun deposita(valor: Double) {

@@ -1,3 +1,4 @@
+import br.com.zupacademy.estudos.modelo.Cliente
 import br.com.zupacademy.estudos.modelo.Conta
 import org.junit.Test
 import kotlin.test.assertEquals
@@ -7,7 +8,7 @@ class ContaTest {
     @Test
     fun deveSacarDaConta() {
         // cenario
-        val conta = Conta(titular = "rafael"
+        val conta = Conta(titular = Cliente("rafael", "111.111.111-11")
                         , numero  = "2020-0"
                         , saldo   = 100.0) // tip: named parameters em construtores
 
