@@ -1,5 +1,6 @@
 package br.com.zupacademy.estudos.service
 
+import br.com.zupacademy.estudos.service.env.Environment
 import org.junit.After
 import org.junit.Assert.*
 import org.junit.Before
@@ -27,5 +28,28 @@ class EnvironmentTest {
         assertEquals(value, "@rponte")
     }
 
+    @Test
+    fun deveRetornarValorPadraoQuandoNaoEncontrarPropertyDaJvm() {
+
+        // ação
+        val value = Environment.getProperty(
+            name = "invalidProp",
+            defaultValue = "xilito"
+        )
+
+        // validação
+        assertEquals(value, "xilito")
+    }
+
+    @Test
+    fun deveRetornarInformacoesDoSistemaOperacional() {
+
+        // ação
+        val osInfo = Environment.getOSInfo()
+
+        // validação
+        assertEquals(osInfo.name, "Windows")
+        assertEquals(osInfo.version, "10")
+    }
 
 }
