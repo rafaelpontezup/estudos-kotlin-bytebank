@@ -19,6 +19,11 @@ class EnvironmentTest {
     }
 
     @Test
+    fun deveRetornarVersaoDaApp() {
+        assertEquals("1.20.20-beta", Environment.version)
+    }
+
+    @Test
     fun deveEncontrarPropertyDaJvm() {
 
         // ação
