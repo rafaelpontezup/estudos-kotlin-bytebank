@@ -28,7 +28,7 @@ object Environment {
          * Object Expression
          * https://kotlinlang.org/docs/reference/object-declarations.html#object-expressions
          *
-         * tip: funciona similar a uma inner class em java
+         * tip: funciona similar a uma anonymous class em java
          */
         val info = object : OSInfo {
             override val name = "Windows"
